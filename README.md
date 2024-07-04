@@ -2,46 +2,50 @@
 
 This project is a React application that visualizes a cryptocurrency portfolio.
 
-## Project Structure
-
-```
-crypto-portfolio-tracker/
-├── src/
-│   ├── App.js
-│   ├── components/
-│   │   └── CryptoSolarSystem.js
-│   └── app.css
-├── package.json
-└── README.md
-```
-
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+These instructions will guide you through setting up the project from scratch and incorporating the existing components.
 
 ### Prerequisites
 
 - Node.js (version 12 or later)
 - npm (usually comes with Node.js)
 
-### Installing
+### Setting Up the Project
 
-1. Clone the repository
+1. Create a new React project
    ```
-   git clone https://github.com/yourusername/crypto-portfolio-tracker.git
-   ```
-2. Navigate to the project directory
-   ```
+   npx create-react-app crypto-portfolio-tracker
    cd crypto-portfolio-tracker
    ```
-3. Install dependencies
+
+2. Install additional required packages
    ```
-   npm install
+   npm install d3
    ```
 
-4. Install additional required packages
-   ```
-   npm install react react-dom d3
+3. Replace the content of `src/App.js` with the following:
+   [Copy the content of your App.js file here]
+
+4. Create a new file `src/components/CryptoSolarSystem.js` and add the following content:
+   [Copy the content of your CryptoSolarSystem.js file here]
+
+5. Replace the content of `src/App.css` with the following:
+   [Copy the content of your app.css file here]
+
+6. Update `src/index.js` to import the CSS file:
+   ```javascript
+   import React from 'react';
+   import ReactDOM from 'react-dom/client';
+   import './App.css';
+   import App from './App';
+
+   const root = ReactDOM.createRoot(document.getElementById('root'));
+   root.render(
+     <React.StrictMode>
+       <App />
+     </React.StrictMode>
+   );
    ```
 
 ### Running the application
@@ -54,17 +58,26 @@ npm start
 
 This will run the app in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## Project Status
+## Project Structure
 
-This project is currently in development. The basic structure and main components (App.js and CryptoSolarSystem.js) have been added, but additional setup may be required to run the application successfully.
+After setup, your project structure should look like this:
 
-## Next Steps
-
-To complete the setup, you may need to:
-
-1. Create an `index.js` file in the `src/` directory
-2. Set up the `public/` folder with an `index.html` file
-3. Ensure all necessary dependencies are correctly listed in `package.json`
+```
+crypto-portfolio-tracker/
+├── node_modules/
+├── public/
+│   ├── index.html
+│   ├── favicon.ico
+│   └── manifest.json
+├── src/
+│   ├── App.js
+│   ├── App.css
+│   ├── index.js
+│   └── components/
+│       └── CryptoSolarSystem.js
+├── package.json
+└── README.md
+```
 
 ## Contributing
 
@@ -72,7 +85,7 @@ As this project is in its early stages, contributions are welcome. If you'd like
 
 ## Authors
 
-- Your Name
+- Park Sy Bil
 
 ## License
 
